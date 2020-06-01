@@ -1,0 +1,108 @@
+.drop-down{
+	display: inline-block;
+}
+
+.drop-down ul {
+	margin-left: 0;
+	padding-left: 0;
+	//width: 500px;
+	list-style: none;
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.drop-down ul ul {
+	display: none;
+	padding: 0;
+	//margin-left: -10px;
+}
+
+.drop-down ul li.active > ul {
+	display: block;
+	width: 100%;
+}
+
+.drop-down ul li {
+	//float: left;
+	width: 170px;
+	//height: 56px;
+	text-align: left;
+	border: 1px solid #ccc; 
+}
+	
+.drop-down ul li:hover {
+	//background: #f2f2f2;
+}
+
+.drop-down ul li{
+	display: flex; 
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: -0.1px;
+	//padding: 7px 10px;
+	color: #2a2a2a; 
+	text-decoration: none;
+}
+					
+.drop-down ul ul {
+	border-radius: 0px; 
+	padding: 0;
+	position: absolute; 
+	top: 100%;
+	left: 0;
+	z-index: 4;
+	background: #f2f2f2;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.drop-down ul ul li {
+	float: none;
+	border-bottom: 2px solid #eaeaea; 
+	position: relative;
+}
+
+.drop-down ul ul li {
+	//padding: 15px 10px;
+	color: #838383;
+}	
+
+.drop-down ul ul li:hover {
+	background: #eee;
+	color: #fff;
+}	
+
+.drop-down .display img:first-child{
+	width: 20px;
+	height: 25px;
+}
+
+.drop-down .display img{
+	width: 10px;
+	height: 8px;
+}
+
+#down-triangle {
+	float: right;
+	width: 0; 
+ 	height: 0;
+ 	//margin-top: 10px;
+ 	border-top: 10px solid black;
+  border-left: 10px solid transparent; 
+  border-right: 10px solid transparent; 
+}
+
+.circle {
+	float: right;
+	display: inline;
+	width: 10px;
+ 	height: 10px; 
+ 	//margin-top: 5px;
+    border: 3px solid darkgray;
+    -moz-border-radius: 100%; 
+    -webkit-border-radius: 100%; 
+    border-radius: 100%;
+}

@@ -1,0 +1,140 @@
+@import 'dropdown';
+@import 'items';
+html,body{
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    margin: 0;
+}
+
+.container{
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.wrapper{
+    max-width: 90%;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+ul{
+    list-style: none;
+}
+
+h1,p,h2,h3,h4{
+    margin: 0;
+}
+
+// Navigation Menu
+nav{
+    padding: 1rem 0;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            width: 10vw;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        ul{
+            display: flex;
+            align-items: center;
+            li{
+                margin-left: 5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-transform: uppercase;
+                font-family: 'Open Sans';
+                font-size: x-small;
+                font-weight: 500;
+                a{
+                    text-transform: uppercase;
+                    font-family: 'Open Sans';
+                    font-size: x-small;
+                    font-weight: 500;
+                }
+                img{
+                    width: 10px;
+                    height: 10px;
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+    background: #f1f1f1;
+    .container{
+        display: flex;
+        justify-content: space-between;
+
+        .left{
+            width: 33.3%;
+            h2{
+                margin-bottom: 0.5rem;
+            }
+            i{
+                font-size: xx-large;
+                margin-right: 1rem;
+            }
+            p:nth-child(2){
+                margin-bottom: 2rem;
+            }
+            p:nth-child(3){
+                font-size: 16px;
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        .right{
+            width: 33.3%;
+
+            h2{
+                margin-bottom: 1rem;
+            }
+            p{
+                margin-bottom: 1rem;
+            }
+
+            a{
+                width: calc(100% - 90px);
+                color: #222;
+                border:2px solid #222;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.house-marker{
+    position: relative;
+
+    i{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: red;
+        border: 1px solid #f2f2f2;
+    }
+
+    span{
+        position: absolute;
+        width: 1px;
+        
+    }
+}

@@ -1,0 +1,53 @@
+@import 'utilities';
+
+header{
+    background: url('./../../banner.jpg');
+    background-size: cover;
+    background-position: top;
+    height: 80vh;
+    width: 100%;
+
+    .container{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        .heading{
+            margin-top: -12vh;
+            background: rgba(255, 255, 255, 0.796);
+            width: 20vw;
+            padding: 2rem;
+            h1{
+                font-family: 'Open Sans';
+            }
+
+            p{
+                font-family: 'Roboto';
+                //text-align: justify;
+                margin: 1rem 0;
+                //border-bottom: 2px solid black;
+
+                a{
+                    padding: 0.5rem 1rem;
+                    border-radius: 50px;
+                    font-family: 'Open Sans';
+                    font-weight: bold;
+                    font-size: small;
+                }
+
+                a:first-child{
+                    background: #3985FF;
+                    color: white;
+                }
+
+                a:last-child{
+                    background: #27A4E8;
+                    color: white;
+                }
+            }
+
+            p:first-child{
+                border-bottom: 2px solid black;
+            }
+        }
+    }
+}
